@@ -1,0 +1,23 @@
+{
+  "name": "heki.css",
+  "version": "1.0.0",
+  "description": "Responsive simple CSS boilerplate",
+  "main": "heki.css",
+  "style": "heki.css",
+  "scripts": {
+    "test": "stylelint heki.css"
+  },
+  "author": "fdietz@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "normalize.css": "^7.0.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "repository": "fdietz/heki.css",
+  "bugs": "https://github.com/fdietz/heki.css/issues",
+  "homepage": "https://fdietz.github.io/heki.css",
+  "stylelint": {
+    "extends": "stylelint-config-standard"
+  }
+}
