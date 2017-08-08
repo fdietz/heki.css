@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -28,7 +29,8 @@
         border: 1px solid #ccc;
       }
 
-      code {
+      pre,
+      .inline-code {
         padding: .2rem .5rem; 
         margin: 0 .2rem; 
 
@@ -51,12 +53,12 @@
       <section class="docs-section">
         <h6 class="docs-header">Typographie</h6>
         <p>
-          Types are all set with <code>rem</code> units, so they can be responsively sized by a single <code>html</code> font-size
+          Types are all set with <code class="inline-code">rem</code> units, so they can be responsively sized by a single <code class="inline-code">html</code>font-size
           property.
         </p>
 
         <p>
-          The typographie basis is Helvetica saved by Google fonts, set at 1em using a "perfect-fit" modular scale of "1.5".
+          The typography basis is Helvetica served by Google fonts, set at 1em using a "perfect-fit" modular scale of <code class="inline-code">1.5</code>.
         </p>
         <div class="docs-example">
           <h1>Heading</h1>
@@ -74,19 +76,21 @@
         </div>
 
         <pre class="code-example">
-          <code class="language-markup">
-            <h1>Heading</h1>
-            <h2>Heading</h2>
-            <h3>Heading</h3>
-            <h4>Heading</h4>
-            <h5>Heading</h5>
-            <h6>Heading</h6>
-  
-            <p>The base type is 15px over 1.6 line height (24px)</p>
-  
-            <strong>Bold</strong>
-            <em>Italic</em>
-            <u>Underline</u>
+          <code class="language-html">
+            <script type="prism-html-markup">
+              <h1>Heading</h1>
+              <h2>Heading</h2>
+              <h3>Heading</h3>
+              <h4>Heading</h4>
+              <h5>Heading</h5>
+              <h6>Heading</h6>
+    
+              <p>The base type is 15px over 1.6 line height (24px)</p>
+    
+              <strong>Bold</strong>
+              <em>Italic</em>
+              <u>Underline</u>
+            </script>
           </code>
         </pre>
       </section>
