@@ -14,8 +14,8 @@
   --color-gray: #868e96;
   --color-gray-darker: #212529;
   --color-gray-light: #bbb;
-  --color-blue: #33C3F0;
-  --color-blue-light: #1EAEDB;
+  --color-blue: #33c3f0;
+  --color-blue-light: #1eaedb;
   --color-primary: var(--color-blue);
   --color-primary-light: var(--color-blue-light);
 
@@ -97,15 +97,20 @@
 html {
   /* 1 */
   box-sizing: border-box;
+
   /* 2 */
   font-family: sans-serif;
+
   /* 3 */
   line-height: 1.15;
+
   /* 4 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+
   /* 5 */
   -ms-overflow-style: scrollbar;
+
   /* 6 */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -133,7 +138,7 @@ section {
 }
 
 
- /*
+/*
  Body
 
  1. Remove the margin in all browsers.
@@ -147,11 +152,12 @@ body {
   font-weight: var(--font-weight-base);
   line-height: var(--line-height-base);
   color: var(--body-color);
+
   /* 2 */
   background-color: var(--body-bg-color);
 }
 
- /*
+/*
  Suppress the focus outline on elements that cannot be accessed via keyboard.
  This prevents an unwanted focus outline from appearing around elements that
  might still respond to pointer events.
@@ -162,7 +168,7 @@ body {
   outline: none !important;
 }
 
- /*
+/*
  Content grouping
 
  1. Add the correct box sizing in Firefox.
@@ -171,8 +177,10 @@ body {
 hr {
   /* 1 */
   box-sizing: content-box;
+
   /* 1 */
   height: 0;
+
   /* 2 */
   overflow: visible;
 }
@@ -219,10 +227,13 @@ abbr[title],
 abbr[data-original-title] {
   /* 2 */
   text-decoration: underline;
+
   /* 2 */
   text-decoration: underline dotted;
+
   /* 3 */
   cursor: help;
+
   /* 1 */
   border-bottom: 0;
 }
@@ -253,6 +264,7 @@ dt {
 
 dd {
   margin-bottom: .5rem;
+
   /* Undo browser default */
   margin-left: 0;
 }
@@ -303,8 +315,10 @@ sup {
 a {
   color: var(--color-primary);
   text-decoration: var(--link-decoration);
+
   /* Remove the gray background on active links in IE 10. */
   background-color: transparent;
+
   /* Remove gaps in links underline in iOS 8+and Safari 8+. */
   -webkit-text-decoration-skip: objects;
 }
@@ -334,14 +348,17 @@ kbd,
 samp {
   /* Correct the inheritance and scaling of font size in all browsers. */
   font-family: monospace, monospace;
+
   /* Correct the odd `em` font sizing in all browsers. */
   font-size: 1em;
 }
 
 pre {
   /* Remove browser default top margin */
+
   /* Reset browser default of `1em` to use `rem`s */
   margin-top: 0;
+
   /* Don't allow content to break outside */
   margin-bottom: 1rem;
   overflow: auto;
@@ -360,6 +377,7 @@ figure {
 */
 img {
   vertical-align: middle;
+
   /* Remove the border on images inside links in IE 10-. */
   border-style: none;
 }
@@ -484,6 +502,7 @@ input[type="radio"],
 input[type="checkbox"] {
   /* 1. Add the correct box sizing in IE 10- */
   box-sizing: border-box;
+
   /* 2. Remove the padding in IE 10- */
   padding: 0;
 }
@@ -505,6 +524,7 @@ input[type="month"] {
 textarea {
   /* Remove the default vertical scrollbar in IE. */
   overflow: auto;
+
   /* Textareas should really only resize vertically so they don't break their (horizontal) containers. */
   resize: vertical;
 }
@@ -517,6 +537,7 @@ fieldset {
    See https://github.com/twbs/bootstrap/issues/12359
    and https://html.spec.whatwg.org/multipage/#the-fieldset-and-legend-elements
   */
+
   /* Reset the default outline behavior of fieldsets so they don't affect page layout. */
   min-width: 0;
   padding: 0;
@@ -531,14 +552,17 @@ fieldset {
 legend {
   display: block;
   width: 100%;
+
   /* 1 */
   max-width: 100%;
   padding: 0;
   margin-bottom: .5rem;
   font-size: 1.5rem;
   line-height: inherit;
+
   /* 2 */
   color: inherit;
+
   /* 1 */
   white-space: normal;
 }
@@ -561,6 +585,7 @@ progress {
    be added to `.form-control` as it's not specific enough. For details, see
    https://github.com/twbs/bootstrap/issues/11586.
   */
+
   /* 2. Correct the outline style in Safari. */
   outline-offset: -2px;
   -webkit-appearance: none;
@@ -581,6 +606,7 @@ progress {
 ::-webkit-file-upload-button {
   /* 2 */
   font: inherit;
+
   /* 1 */
   -webkit-appearance: button;
 }
