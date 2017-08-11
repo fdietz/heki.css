@@ -818,9 +818,6 @@ input[type='text'],
 input[type='url'],
 textarea,
 select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   background-color: transparent;
   border: 1px solid var(--color-gray-light);
   border-radius: var(--component-border-radius);
@@ -843,15 +840,6 @@ textarea:focus,
 select:focus {
   border-color: var(--color-primary);
   outline: 0;
-}
-
-select {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat
-}
-
-select:focus {
-  color: #33c3f0;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>')
 }
 
 textarea {

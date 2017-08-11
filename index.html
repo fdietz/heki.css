@@ -12,17 +12,71 @@
     <div class="container">
       <section class="header">
         <h1>heki.css</h1>
-        <h3>A simple responsive CSS boilerplate</h3>
+        <h3>A simple responsive boilerplate</h3>
+        <p>Currently v1.0</p>
         <p>
           <a href="#" class="button button-primary button-large">Download</a>
           <a href="#" class="button button-large">Github</a>
         </p>
       </section>
       <section class="docs-section">
+        <h3 class="docs-header">Motivation</h3>
+        <p class="docs-description">
+          heki.css provides a minimal set of styles for a clean start at only <strong>2kb gzipped</strong>.
+          It is intentionally not a UI framework and a great start if you feel that you don't need all the functionality
+          provided by a larger framework.
+        </p>
+      </section>
+      <section class="docs-section">
+        <h3 class="docs-header">Getting Started</h3>
+        <h4>Download</h4>
+        <p class="docs-description">
+          The easist way to get started is to download heki.css.
+        </p>
+        <p class="docs-description">
+          <a href="#" class="button button-primary button-large">Download</a>
+        </p>
+        <h4>Install with NPM</h4>
+        <p class="docs-description">
+          heki.css is available via npm
+        </p>
+        <pre class="code-example">
+          <code class="language-html">
+            <script type="prism-html-markup">
+            $ npm install heki.css
+            </script>
+          </code>
+        </pre>
+      </section>
+
+      <section class="docs-section">
+        <h3 class="docs-header">Usage</h3>
+        <p class="docs-description">
+          Add the stylesheet link tag in the head.
+        </p>
+        <pre class="code-example">
+          <code class="language-html">
+            <script type="prism-html-markup">
+              <html>
+                <head>
+                  <link rel="stylesheet" href="//cdn.rawgit.com/fdietz/heki.css/master/dist/heki.min.css">
+                </head>
+                <body>
+                  <h1>Welcome to heki.css!</h1>
+                </body>
+              </html>
+            </script>
+          </code>
+        </pre>
+      </section>
+
+      <section class="docs-section">
         <h3 class="docs-header">Typographie</h3>
         <p class="docs-description">
-          Types are all set with <code class="inline-code">rem</code> units, so they can be responsively sized by a single <code class="inline-code">html</code>font-size
-          property.
+          CSS3 introduced the rem unit, which stands for "root em". The <code class="inline-code">rem</code> unit is relative to the font-size of the root element <code class="inline-code">html</code>. This 
+          means we can define a single font size on the root element and define all rem units as a percentage of that.
+        </p>
+        <p class="docs-description">
           The typography basis is Helvetica served by Google fonts, set at 1em using a "perfect-fit" modular scale of <code class="inline-code">1.5</code>.
         </p>
         <div class="docs-example">
@@ -59,7 +113,7 @@
 
       <section class="docs-section">
         <h3 class="docs-header">Buttons</h3>
-        <p class="docs-description">Buttons come in two basic styles.</p>
+        <p class="docs-description">Buttons come in two basic styles, an filled button and an outline only button.</p>
         <div class="docs-example">
           <p>
             <a class="button" href="#">Anchor button</a>
@@ -211,7 +265,8 @@
 
       <section class="docs-section">
         <h3 class="docs-header">Forms</h3>
-        <p class="docs-description">Styling forms can be a pain in the ass.</p>
+        <p class="docs-description">Styling forms can be a pain in the ass. All inputs are normalized to 
+          use a common cross-browser height so then can be easily stacked or placed alongside each other.</p>
         <div class="docs-example">
           <form>
             <fieldset>
