@@ -206,6 +206,59 @@
       </section>
 
       <section class="docs-section">
+        <h3 class="docs-header">Forms</h3>
+        <p class="docs-description">Styling forms can be a pain in the ass.</p>
+        <div class="docs-example">
+          <form>
+            <fieldset>
+              <label for="name">Name</label>
+              <input type="text" placeholder="Enter name">
+              <label for="age">Age</label>
+              <select id="age">
+                <option value="0-10">0-03</option>
+                <option value="10-20">10-20</option>
+                <option value="20-30">20-30</option>
+                <option value="40+">40+</option>
+              </select>
+              <label for="comment">Comment</label>
+              <textarea placeholder="Enter comment..." id="comment"></textarea>
+              <div class="float-right">
+                <input type="checkbox" id="confirm">
+                <label class="label-inline" for="confirm">Send a copy to yourself</label>
+              </div>
+              <input class="button button-primary" type="submit" value="Send">
+            </fieldset>
+          </form>
+        </div>
+        <pre class="code-example">
+          <code class="language-html">
+            <script type="prism-html-markup">
+              <form>
+                <fieldset>
+                  <label for="name">Name</label>
+                  <input type="text" placeholder="Enter name">
+                  <label for="age">Age</label>
+                  <select id="age">
+                              <option value="0-10">0-03</option>
+                              <option value="10-20">10-20</option>
+                              <option value="20-30">20-30</option>
+                              <option value="40+">40+</option>
+                            </select>
+                  <label for="comment">Comment</label>
+                  <textarea placeholder="Enter comment..." id="comment"></textarea>
+                  <div class="float-right">
+                    <input type="checkbox" id="confirm">
+                    <label class="label-inline" for="confirm">Send a copy to yourself</label>
+                  </div>
+                  <input class="button button-primary" type="submit" value="Send">
+                </fieldset>
+              </form>
+            </script>
+          </code>
+        </pre>
+      </section>
+
+      <section class="docs-section">
         <h3 class="docs-header"></h3>
         <p class="docs-description"></p>
         <div class="docs-example">
