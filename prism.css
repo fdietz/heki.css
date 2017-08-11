@@ -11,9 +11,8 @@
 pre[class*="language-"] {
   padding: 1rem;
   color: black;
-  background: none;
   font-family: monospace;
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-align: left;
   white-space: pre;
   word-spacing: normal;

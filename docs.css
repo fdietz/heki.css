@@ -27,7 +27,8 @@ html {
 }
 
 .code-example {
-  border-left: 4px solid #ccc;
+  border-left: 4px solid #33c3f0;
+  background-color: #f6f7f7;
 }
 
 pre {
