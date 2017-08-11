@@ -656,7 +656,9 @@ template {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   margin-bottom: 0.5em;
   font-weight: inherit;
   line-height: 1.2;
@@ -676,6 +678,14 @@ h3 {
 
 h4 {
   font-size: 1.414em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.707em;
 }
 
 small,
