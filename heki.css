@@ -683,13 +683,6 @@ small,
   font-size: 0.707em;
 }
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /************************* Links *************************/
 
 a {
