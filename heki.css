@@ -72,6 +72,13 @@
 
   /* utils */
   --text-muted: var(--color-gray);
+
+  /* space */
+  --space-0_5: 0.5rem;
+  --space-1: 1rem;
+  --space-1_5: 1.5rem;
+  --margin-bottom-sm: var(--space-0_5);
+  --margin-bottom: var(--space-1);
 }
 
 /************************* Reset *************************/
@@ -137,7 +144,6 @@ section {
   display: block;
 }
 
-
 /*
  Body
 
@@ -200,7 +206,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: var(--margin-bottom-sm);
 }
 
 /*
@@ -211,7 +217,7 @@ h6 {
 */
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: var(--margin-bottom);
 }
 
 /*
@@ -239,7 +245,7 @@ abbr[data-original-title] {
 }
 
 address {
-  margin-bottom: 1rem;
+  margin-bottom: var(--margin-bottom);
   font-style: normal;
   line-height: inherit;
 }
@@ -248,7 +254,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: var(--margin-bottom);
 }
 
 ol ol,
@@ -263,7 +269,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: var(--margin-bottom-sm);
 
   /* Undo browser default */
   margin-left: 0;
@@ -302,11 +308,11 @@ sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 /*
@@ -347,7 +353,7 @@ code,
 kbd,
 samp {
   /* Correct the inheritance and scaling of font size in all browsers. */
-  font-family: monospace, monospace;
+  font-family: monospace;
 
   /* Correct the odd `em` font sizing in all browsers. */
   font-size: 1em;
@@ -360,7 +366,7 @@ pre {
   margin-top: 0;
 
   /* Don't allow content to break outside */
-  margin-bottom: 1rem;
+  margin-bottom: var(--margin-bottom);
   overflow: auto;
 }
 
@@ -437,7 +443,7 @@ th {
 label {
   /* Allow labels to use `margin` for spacing. */
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: var(--margin-bottom-sm);
 }
 
 /*
@@ -556,7 +562,7 @@ legend {
   /* 1 */
   max-width: 100%;
   padding: 0;
-  margin-bottom: .5rem;
+  margin-bottom: var(--margin-bottom-sm);
   font-size: 1.5rem;
   line-height: inherit;
 
