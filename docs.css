@@ -11,12 +11,7 @@
 }
 
 .docs-section {
-  padding: 7.5rem 0;
-}
-
-.docs-header {
-  /* font-size: 1.4rem;
-  font-weight: 600; */
+  padding: 3.5rem 0;
 }
 
 .docs-description {
@@ -24,7 +19,6 @@
 }
 
 .docs-example {
-  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
