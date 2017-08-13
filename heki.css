@@ -12,12 +12,12 @@
   --color-white: white;
   --color-black: #606c76;
   --color-gray: #868e96;
-  --color-gray-darker: #212529;
   --color-gray-light: #bbb;
-  --color-blue: #33c3f0;
-  --color-blue-light: #1eaedb;
-  --color-primary: var(--color-blue);
-  --color-primary-light: var(--color-blue-light);
+  --color-gray-lighter: #eaeaea;
+  --color-blue: #1eaedb;
+  --color-blue-light: #33c3f0;
+  --color-brand: var(--color-blue);
+  --color-brand-light: var(--color-blue-light);
 
   /*
   Safari for OS X and iOS (San Francisco)
@@ -42,6 +42,17 @@
   --font-weight-base: normal;
   --font-weight-bold: bold;
   --line-height-base: 1.5;
+
+  /* modular scale using http://type-scale.com/ */
+  --font-size-h1: 3.998em;
+  --font-size-h2: 2.827em;
+  --font-size-h3: 1.999em;
+  --font-size-h4: 1.414em;
+  --font-size-h5: 1em;
+  --font-size-h6: 0.707em;
+  --font-size-small: 0.707em;
+
+  /* main colors */
   --body-color: var(--color-black);
   --body-bg-color: var(--color-white);
 
@@ -52,20 +63,30 @@
 
   /* links */
   --link-decoration: none;
+  --link-color: var(--color-brand);
+  --link-color-hover: var(--color-brand-light);
 
   /* button */
   --button-font-family: inherit;
   --button-font-weight: inherit;
   --button-font-size: var(--font-size);
   --button-color: var(--color-black);
-  --button-color-primary: var(--color-white);
   --button-border-radius: var(--component-border-radius);
-  --button-border: var(--component-border-width) solid var(--color-gray-light);
-  --button-border-hover: var(--component-border-width) solid var(--color-gray);
-  --button-bg-color: var(--color-white);
+  --button-border: var(--component-border-width) solid var(--color-gray-lighter);
+  --button-border-hover: var(--component-border-width) solid var(--color-gray-lighter);
+  --button-bg-color: var(--color-gray-lighter);
   --button-bg-color-hover: var(--color-gray-light);
-  --button-bg-color-primary: var(--color-primary);
-  --button-bg-color-hover-primary: var(--color-primary-light);
+
+  /* primary button */
+  --button-color-primary: var(--color-white);
+  --button-border-color-primary: var(--color-brand-light);
+  --button-bg-color-primary: var(--color-brand-light);
+  --button-bg-color-hover-primary: var(--color-brand);
+  --button-border-color-hover-primary: var(--color-brand);
+
+  /* outline button */
+  --button-border-color-outline: var(--color-gray-light);
+  --button-border-color-hover-outline: var(--color-gray);
 
   /* table */
   --table-cell-padding: 0.75rem;
@@ -319,7 +340,7 @@ sup {
  Links
 */
 a {
-  color: var(--color-primary);
+  color: var(--color-brand);
   text-decoration: var(--link-decoration);
 
   /* Remove the gray background on active links in IE 10. */
@@ -375,7 +396,7 @@ pre {
 */
 figure {
   /* Apply a consistent margin strategy (matches our type styles). */
-  margin: 0 0 1rem;
+  margin: 0 0 var(--space-1);
 }
 
 /*
@@ -644,7 +665,6 @@ template {
 
 /************************* Base Styles *************************/
 
-
 @media only screen and (max-width: 640px) {
   html {
     font-size: 1.2rem;
@@ -659,48 +679,48 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.5em;
+  margin-bottom: var(--margin-bottom-sm);
   font-weight: inherit;
   line-height: 1.2;
 }
 
 h1 {
-  font-size: 3.998em;
+  font-size: var(--font-size-h1);
 }
 
 h2 {
-  font-size: 2.827em;
+  font-size: var(--font-size-h2);
 }
 
 h3 {
-  font-size: 1.999em;
+  font-size: var(--font-size-h3);
 }
 
 h4 {
-  font-size: 1.414em;
+  font-size: var(--font-size-h4);
 }
 
 h5 {
-  font-size: 1em;
+  font-size: var(--font-size-h5);
 }
 
 h6 {
-  font-size: 0.707em;
+  font-size: var(--font-size-h6);
 }
 
 small,
 .font_small {
-  font-size: 0.707em;
+  font-size: var(--font-size-small);
 }
 
 /************************* Links *************************/
 
 a {
-  color: #1eaedb;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #0fa0ce;
+  color: var(--link-color-hover);
 }
 
 /************************* Buttons *************************/
@@ -740,7 +760,7 @@ button,
 }
 
 .button-block {
-  width: 100% !important;
+  width: 100%;
   display: block;
 }
 
@@ -751,15 +771,13 @@ button:hover,
 }
 
 button:hover:not(:disabled),
-.button:hover:not(.disabled) {
-  border-color: var(--button-border-hover);
-}
-
+.button:hover:not(.disabled),
 button:active:not(:disabled),
 button.active:not(:disabled),
 .button.active:not(.disabled) {
   color: var(--button-color);
-  border-color: var(--button-border-hover);
+  background-color: var(--button-bg-color-hover);
+  border: var(--button-border-hover);
 }
 
 button:disabled,
@@ -772,7 +790,7 @@ button.disabled,
 .button-primary {
   color: var(--button-color-primary);
   background-color: var(--button-bg-color-primary);
-  border-color: var(--button-bg-color-primary);
+  border-color: var(--button-border-color-primary);
 }
 
 .button-primary:hover,
@@ -780,7 +798,20 @@ button.disabled,
 .button-primary.active:not(.disabled) {
   color: var(--button-color-primary);
   background-color: var(--button-bg-color-hover-primary);
-  border-color: var(--button-bg-color-hover-primary);
+  border-color: var(--button-border-color-hover-primary);
+}
+
+.button-outline {
+  color: var(--button-color-outline);
+  background-color: var(--button-bg-color-outline);
+  border-color: var(--button-border-color-outline);
+}
+
+.button-outline:hover,
+.button-outline:hover:not(.disabled),
+.button-outline.active:not(.disabled) {
+  background-color: inherit;
+  border-color: var(--button-border-color-hover-outline);
 }
 
 /************************* Table *************************/
@@ -838,7 +869,7 @@ input[type='text']:focus,
 input[type='url']:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--color-primary);
+  border-color: var(--color-brand);
   outline: 0;
 }
 
