@@ -60,6 +60,7 @@
   --component-border-width: 1px;
   --component-spacing: 1rem;
   --component-border-radius: 4px;
+  --component-placeholder-color: var(--color-gray);
 
   /* links */
   --link-decoration: none;
@@ -901,29 +902,29 @@ input[type='radio'] {
 
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: var(--color);
+  color: var(--component-placeholder-color);
 }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: var(--color);
+  color: var(--component-placeholder-color);
   opacity: 1;
 }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: var(--color);
+  color: var(--component-placeholder-color);
   opacity: 1;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: var(--color);
+  color: var(--component-placeholder-color);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: var(--color);
+  color: var(--component-placeholder-color);
 }
 
 /************************* Utils *************************/
