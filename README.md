@@ -11,9 +11,45 @@ It is intentionally not a UI framework and a great start if you feel that you do
   * Change via Javascript
 * Consistenly using margin-bottom only (even in reset)
 * Responsive font-size using a modular type scale
+* It is just vanilla CSS, no compile step required
 
 ## Getting started
 
+### Download
+The easist way to get started is to download the [latest release](https://github.com/fdietz/heki.css/release).
+
+
+### heki.css is available via npm
+```
+$ npm install heki.css
+```
+
+### Add the stylesheet link tag in the head.
+
+```
+<html>
+  <head>
+    <link rel="stylesheet" href="//cdn.rawgit.com/fdietz/heki.css/master/dist/heki.min.css">
+  </head>
+  <body>
+    <h1>Welcome to heki.css!</h1>
+  </body>
+</html>
+```
+
+## Browser Support
+* Chrome latest
+* Firefox latest
+* Opera latest
+* Safari latest
+* Edge
+
+You can use `heki.css` today if you can ignore Internet Explorer. Edge is fine though.
+
+This mostly comes down to support for [CSS variables](http://caniuse.com/#feat=css-variables). If you need to support Internet Explorer consider using a Polyfill [myth](http://www.myth.io/) or similar. To makes things simpler for now, `heki.css` only uses css variables at the `:root` scope.
 ## Credit
-Reset based on Bootstrap 4 "Reboot"
-https://medium.com/css-mine/bootstraps-reboot-next-evolutionary-step-for-css-reset-a30f718521b9
+Lot's of inspiration from minimal frameworks as for example [milligram](https://github.com/milligram/milligram) or [skeleton](http://getskeleton.com/).
+
+The reset is based on [Bootstrap 4 Reboot](https://v4-alpha.getbootstrap.com/content/reboot/) and adapted to use CSS variables.
+
+Awesome articles as for example [Locally scoped CSS variables: What, how, and why](https://una.im/local-css-vars/#💁) by Una Kravets.

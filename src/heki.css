@@ -4,7 +4,11 @@
 - Reset (based on Bootstrap 4 reboot)
 - Base Styles
 - Typography
+- Links
 - Buttons
+- Blockquote
+- Table
+- Forms
 */
 
 /* Variables */
@@ -13,7 +17,6 @@
   --color-black: #606c76;
   --color-gray: #868e96;
   --color-gray-light: #bbb;
-  --color-gray-lighter: #eaeaea;
   --color-blue: #1eaedb;
   --color-blue-light: #33c3f0;
   --color-brand: var(--color-blue);

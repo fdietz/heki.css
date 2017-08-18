@@ -2,22 +2,32 @@
   "name": "heki.css",
   "version": "1.0.0",
   "description": "Simple responsive boilerplate to kickstart your project",
-  "main": "src/heki.css",
-  "style": "src/heki.css",
-  "scripts": {
-    "test": "stylelint heki.css",
-    "minimize": "node-sass --output-style compressed src/heki.css dist/heki.min.css"
-  },
-  "author": "fdietz@gmail.com",
   "license": "MIT",
-  "devDependencies": {
-    "node-sass": "^4.5.3",
-    "stylelint": "^8.0.0",
-    "stylelint-config-standard": "^17.0.0"
-  },
+  "author": "fdietz@gmail.com",
+  "keywords": [
+    "bootstrap",
+    "css",
+    "front-end",
+    "html",
+    "kickstarter",
+    "mobile",
+    "responsive"
+  ],
   "repository": "fdietz/heki.css",
   "bugs": "https://github.com/fdietz/heki.css/issues",
   "homepage": "https://fdietz.github.io/heki.css",
+  "main": "dist/heki.min.css",
+  "scripts": {
+    "test": "stylelint heki.css",
+    "clean": "rimraf dist",
+    "minimize": "node-sass --output-style compressed src/heki.css dist/heki.min.css"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "rimraf": "^2.6.1",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0"
+  },
   "stylelint": {
     "extends": "stylelint-config-standard"
   }
