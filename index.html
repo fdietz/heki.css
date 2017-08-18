@@ -15,8 +15,8 @@
         <h3>A simple responsive boilerplate</h3>
         <p>Currently v1.0</p>
         <p>
-          <a href="#" class="button button-primary button-large">Download</a>
-          <a href="#" class="button button-large">Github</a>
+          <a href="#" class="button button-large">Download</a>
+          <a href="#" class="button button-outline button-large">Github</a>
         </p>
       </section>
       <section class="docs-section">
@@ -91,68 +91,12 @@
         <pre class="code-example">
           <code class="language-html">
             <script type="prism-html-markup">
-              <!-- Standard headings -->
               <h1>Heading</h1>
               <h2>Heading</h2>
               <h3>Heading</h3>
               <h4>Heading</h4>
               <h5>Heading</h5>
               <h6>Heading</h6>
-              
-              <!-- Base type size -->
-              <p>The base type is 16px over 1.6 line height (24px)</p>
-    
-              <!-- Other styled text tags -->
-              <strong>Bold</strong>
-              <em>Italic</em>
-              <u>Underline</u>
-            </script>
-          </code>
-        </pre>
-      </section>
-
-      <section class="docs-section">
-        <h3 class="docs-header">Buttons</h3>
-        <p class="docs-description">Buttons come in two basic styles, an filled button and an outline only button.</p>
-        <div class="docs-example">
-          <p>
-            <a class="button" href="#">Anchor button</a>
-            <button>Button element</button>
-            <button disabled>Disabled Button</button>
-          </p>
-          <p>
-            <button class="button-small">Small</button>
-            <button>Default</button>
-            <button class="button-large">Large</button>
-          </p>
-          <p>
-            <button class="button-small button-outline">Small Outline</button>
-            <button class="button button-outline">Default Outline</button>
-            <button class="button-large button-outline">Large Outline</button>
-          </p>
-          <p>
-            <button class="button-small button-primary">Small Primary</button>
-            <button class="button button-primary">Default Primary</button>
-            <button class="button-large button-primary">Large Primary</button>
-          </p>
-        </div>
-        <pre class="code-example">
-          <code class="language-html">
-            <script type="prism-html-markup">
-              <a class="button" href="#">Anchor button</a>
-              <button>Button element</button>
-
-              <button class="button-small">Small</button>
-              <button>Default</button>
-              <button class="button-large">Large</button>
-
-              <button class="button-small button-outline">Small Outline</button>
-              <button class="button button-outline">Default Outline</button>
-              <button class="button-large button-outline">Large Outline</button>
-
-              <button class="button-small button-primary">Small Primary</button>
-              <button class="button button-primary">Default Primary</button>
-              <button class="button-large button-primary">Large Primary</button>
             </script>
           </code>
         </pre>
@@ -185,6 +129,14 @@
                 </li>
               </ol>
             </div>
+            <div class="column">
+              <dl>
+                <dt>Definition List Item 1</dt>
+                <dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</dd>
+                <dt>Definition List Item 2</dt>
+                <dd>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</dd>
+              </dl>
+            </div>
           </div>
         </div>
         <pre class="code-example">
@@ -211,6 +163,164 @@
                   </ol>
                 </li>
               </ol>
+
+              <!-- definition list -->
+              <dl>
+                <dt>Definition List Item 1</dt>
+                <dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                  dummy text ever since the 1500s</dd>
+                <dt>Definition List Item 2</dt>
+                <dd>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old.</dd>
+              </dl>
+            </script>
+          </code>
+        </pre>
+      </section>
+
+      <section class="docs-section">
+        <h3 class="docs-header">Blockquote</h3>
+        <p class="docs-description">The blockquote represents a section quoted from another source.</p>
+        <div class="docs-example">
+          <blockquote>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          </blockquote>
+        </div>
+        <pre class="code-example">
+            <code class="language-html">
+              <script type="prism-html-markup">
+                <blockquote>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                  has been the industry's standard dummy text ever since the 1500s
+                </blockquote>
+              </script>
+            </code>
+          </pre>
+      </section>
+
+      <section class="docs-section">
+        <h3 class="docs-header">Text Formats</h3>
+        <div class="docs-example">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>&lt;strong&gt;</code></td>
+                <td><strong>This is strong text</strong></td>
+              </tr>
+              <tr>
+                <td><code>&lt;em&gt;</code></td>
+                <td><em>This is emphasized text</em></td>
+              </tr>
+              <tr>
+                <td><code>&lt;u&gt;</code></td>
+                <td>
+                  <u>This is underlined text</u>
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;s&gt;</code></td>
+                <td>
+                  <s>This is strikethrough text</s>
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;a&gt;</code></td>
+                <td><a href="#">This is link text</a></td>
+              </tr>
+              <tr>
+                <td><code>&lt;small&gt;</code></td>
+                <td><small>This is small text</small></td>
+              </tr>
+              <tr>
+                <td><code>&lt;sup&gt;</code></td>
+                <td><sup>This is superscript text</sup></td>
+              </tr>
+              <tr>
+                <td><code>&lt;sub&gt;</code></td>
+                <td><sub>This is subscript text</sub></td>
+              </tr>
+              <tr>
+                <td><code>&lt;code&gt;</code></td>
+                <td><code>This is code text</code></td>
+              </tr>
+              <tr>
+                <td><code>&lt;samp&gt;</code></td>
+                <td><samp>This is sample text</samp></td>
+              </tr>
+              <tr>
+                <td><code>&lt;var&gt;</code></td>
+                <td><var>This is variable text</var></td>
+              </tr>
+              <tr>
+                <td><code>&lt;kbd&gt;</code></td>
+                <td><kbd>This is keyboard text</kbd></td>
+              </tr>
+              <tr>
+                <td><code>&lt;abbr&gt;</code></td>
+                <td><abbr title="Abbreviation">This is abbreviation text</abbr></td>
+              </tr>
+              <tr>
+                <td><code>&lt;del&gt;</code></td>
+                <td>
+                  <del>This is deleted text</del>
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;ins&gt;</code></td>
+                <td>
+                  <ins>This is inserted text</ins>
+                </td>
+              </tr>
+              <tr>
+                <td><code>&lt;mark&gt;</code></td>
+                <td>
+                  <mark>This is marked text</mark>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="docs-section">
+        <h3 class="docs-header">Buttons</h3>
+        <p class="docs-description">Buttons come in two basic styles, an filled button and an outline only button.</p>
+        <div class="docs-example">
+          <p>
+            <a class="button" href="#">Anchor button</a>
+            <button>Button element</button>
+            <button disabled>Disabled Button</button>
+          </p>
+          <p>
+            <button class="button-small">Small</button>
+            <button>Default</button>
+            <button class="button-large">Large</button>
+          </p>
+          <p>
+            <button class="button-small button-outline">Small Outline</button>
+            <button class="button button-outline">Default Outline</button>
+            <button class="button-large button-outline">Large Outline</button>
+          </p>
+        </div>
+        <pre class="code-example">
+          <code class="language-html">
+            <script type="prism-html-markup">
+              <a class="button" href="#">Anchor button</a>
+              <button>Button element</button>
+
+              <button class="button-small">Small</button>
+              <button>Default</button>
+              <button class="button-large">Large</button>
+
+              <button class="button-small button-outline">Small Outline</button>
+              <button class="button button-outline">Default Outline</button>
+              <button class="button-large button-outline">Large Outline</button>
             </script>
           </code>
         </pre>

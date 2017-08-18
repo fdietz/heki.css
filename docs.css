@@ -1,5 +1,6 @@
+
 html {
-  border-top: 4px solid #33c3f0;
+  border-top: 4px solid #1eaedb;
 }
 
 .container {
@@ -27,7 +28,7 @@ html {
 }
 
 .code-example {
-  border-left: 4px solid #33c3f0;
+  border-left: 4px solid #1eaedb;
   background-color: #f6f7f7;
 }
 

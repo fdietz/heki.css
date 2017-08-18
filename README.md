@@ -15,5 +15,5 @@ It is intentionally not a UI framework and a great start if you feel that you do
 ## Getting started
 
 ## Credit
-Reset based on Bootstrap 4 
+Reset based on Bootstrap 4 "Reboot"
 https://medium.com/css-mine/bootstraps-reboot-next-evolutionary-step-for-css-reset-a30f718521b9
