@@ -4,6 +4,8 @@ A simple responsive boilerplate to kickstart your project.
 heki.css provides a minimal set of styles for a clean start at only *2.5kb gzipped*.
 It is intentionally not a UI framework and a great start if you feel that you don't need all the functionality provided by a larger framework.
 
+[Documentation](https://fdietz.github.io/heki.css/index.html)
+
 ## Motivation
 * Using CSS variables (for example: --primary-color: blue)
   * Simplifies customizing of boilerplate
