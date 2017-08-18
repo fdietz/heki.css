@@ -16,7 +16,7 @@ It is intentionally not a UI framework and a great start if you feel that you do
 ## Getting started
 
 ### Download
-The easist way to get started is to download the [latest release](https://github.com/fdietz/heki.css/release).
+The easist way to get started is to download the [latest release](https://github.com/fdietz/heki.css/releases).
 
 
 ### heki.css is available via npm
