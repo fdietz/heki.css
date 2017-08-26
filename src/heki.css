@@ -47,13 +47,13 @@
   --line-height-base: 1.5;
 
   /* modular scale using http://type-scale.com/ */
-  --font-size-h1: 3.998em;
-  --font-size-h2: 2.827em;
-  --font-size-h3: 1.999em;
-  --font-size-h4: 1.414em;
-  --font-size-h5: 1em;
-  --font-size-h6: 0.707em;
-  --font-size-small: 0.707em;
+  --font-size-h1: 3.998rem;
+  --font-size-h2: 2.827rem;
+  --font-size-h3: 1.999rem;
+  --font-size-h4: 1.414rem;
+  --font-size-h5: 1rem;
+  --font-size-h6: 0.707rem;
+  --font-size-small: 0.707rem;
 
   /* main colors */
   --body-color: var(--color-black);
